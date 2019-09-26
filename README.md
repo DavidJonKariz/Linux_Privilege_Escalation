@@ -19,3 +19,18 @@ The main objective is to identify the distribution type and the kernel version o
  `cat / proc/version`
  
  
+### 2. Enumeration of services and application
+
+The main objective is to identify the services and the applications running with their respective users.
+
+Services running and user-context:
+
+`Ps aux`
+
+Versions of services: 
+
+`Ps -ef`
+
+Applications that are installed:
+
+`ls -alh /usr/bin/`
