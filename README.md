@@ -11,6 +11,11 @@ Steps of privilege escalation
 The main objective is to identify the distribution type and the kernel version of the Operating System.
 
 Distribution type command is:
+
  'cat /etc/issue'
+ 
 Kernel version: 
+
  'cat / proc/version'
+ 
+ 
