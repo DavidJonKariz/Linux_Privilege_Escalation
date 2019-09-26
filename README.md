@@ -12,10 +12,10 @@ The main objective is to identify the distribution type and the kernel version o
 
 Distribution type command is:
 
- 'cat /etc/issue'
+ `cat /etc/issue`
  
 Kernel version: 
 
- 'cat / proc/version'
+ `cat / proc/version`
  
  
