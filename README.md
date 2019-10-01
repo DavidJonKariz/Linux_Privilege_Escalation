@@ -1,4 +1,25 @@
-### Steps of privilege escalation
+# LINUX PRIVILEGE ESCALATION
+
+## Table Of Contents
+
+ - [Steps of privilege escalation](#steps-of-privilege-escalation)
+  - [Enumeration of Operating System](#1-enumeration-of-operating-system)
+  - [Enumeration of Services and Application](#2-enumeration-of-services-and-application)
+  - [Enumeration of File Systems](#3-enumeration-of-file-systems)
+  - [Confidential Information](#4-confidential-information)
+  - [Preparation and finding Exploit Code](#5-preparation-and-finding-exploit-code)
+ - [Reasons for Privilege Escalation](#reasons-for-privilege-escalation)
+ - [Techniques for Privilege Escalation](#techniques-for-privilege-escalation)
+  - [Kernel Exploits](#1-kernel-exploits)
+  - [Exploiting Services that run as root](#2-exploiting-services-that-run-as-root)
+  - [Exploiting SUID Executables](#3-exploiting-suid-executables)
+  - [Exploiting sudo Rights / User](#4exploiting-sudo-rightsuser)
+  - [Exploiting badly configured Cron Jobs](#5exploiting-badly-configured-cron-jobs)
+  - [Exploiting Information](#6exploiting-users-with--in-their-path)
+ - [Unix Privesc Check](#unix-privesc-check)
+ - [Questions](#questions)
+
+### Steps of Privilege Escalation
 
 1. Enumeration
 2. Sorting through data, analysis and prioritisation.
@@ -63,7 +84,7 @@ The aim is to identify languages supported and how files are uploaded:
  
  `find /name wget`
  
- ## REASONS FOR PRIVILEGE ESCALATION
+ ### Reasons for Privilege Escalation
  
  But first, a look into why one would use it:
  
@@ -123,7 +144,7 @@ However, administrators may unknowingly introduce dangerous SUID configurations 
  
  - Never set SUID bit on any file editor/compiler/interpreter as an attacker can easily read or overwrite any files present on the system.
 
-### 4.	Exploiting ‘sudo’ Rights/User 
+### 4.	Exploiting ‘sudo’ Rights / User 
 
 Attackers may aim at compromising users with sudo access, should they lack direct access to root privileges. By gaining access to sudo users, he gains root privileges as a result. As the administrator allows users to run a few commands through ‘sudo’ rights, they are unbeknownst to them, introducing vulnerabilities leading to privilege escalation.
 
