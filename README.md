@@ -82,7 +82,7 @@ The aim is to identify languages supported and how files are uploaded:
 
  - Means of uploading files:
  
- `find /name wget`
+ `find / name wget`
  
  ### Reasons for Privilege Escalation
  
